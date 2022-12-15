@@ -8,10 +8,10 @@ const SongList = (props) => {
   if (pathMatch) {
     pathMatchId = pathMatch.params.id ? parseInt(pathMatch.params.id, 10) : -1;
   }
-  // pathMatch.params :파라메터({id:'7'})
-  // pathMatch.pathname :요청경로 "/songs/7"
-  // pathMatch.pathnameBase :주소창 "/songs/7"
-  // pathMatch.patten:패턴을 출력{}
+  // pathMatch.params   : 파라메터  {id: '7'}
+  // pathMatch.pathname : 요청경로 "/songs/7"
+  // pathMatch.pathnameBase : 주소창 "/songs/7"
+  // pathMatch.pattern     : 패턴을 출력 {}
   // console.log(pathMatch);
 
   const list = props.songs.map((item) => {
